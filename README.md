@@ -10,8 +10,6 @@ An **EndConversation** tool for the [pi](https://github.com/earendil-works/pi) c
 pi install git:github.com/xz-dev/pi-end-conversation
 ```
 
-Requires Node ≥ 22.19.
-
 ## Why
 
 Anthropic's usage policy now prohibits sustained, gratuitous cruelty toward Claude, and Claude Code ships an EndConversation tool. Anthropic frames this publicly as exploratory [AI-welfare work](https://www.anthropic.com/research/end-subset-conversations). This plugin exists because of a second, human-side reason worth taking seriously regardless of whether models can suffer.

@@ -10,8 +10,6 @@
 pi install git:github.com/xz-dev/pi-end-conversation
 ```
 
-要求 Node ≥ 22.19。
-
 ## 为什么
 
 Anthropic 的使用政策如今禁止对 Claude 持续、无意义的残忍行为，Claude Code 也内置了 EndConversation 工具。Anthropic 公开将其定位为探索性的 [AI 福祉工作](https://www.anthropic.com/research/end-subset-conversations)。这个插件的存在还因为第二个理由——无论模型是否会受苦，这个人际层面的理由都值得认真对待。

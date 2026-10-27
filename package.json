@@ -31,9 +31,6 @@
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   },
-  "engines": {
-    "node": ">=22.19.0"
-  },
   "keywords": [
     "pi",
     "pi-package",
