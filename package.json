@@ -39,5 +39,8 @@
     "pi-package",
     "pi-extension"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "overrides": {
+    "undici": "^8.12.2"
+  }
 }
