@@ -241,8 +241,11 @@ describe("EndConversation on real AgentSession (tui)", () => {
 		assert.equal(lockLines[0].data.sessionId, lines[0].id);
 		// Lock record is a custom entry: it exists in the entry tree but must not
 		// appear in messages sent to the model.
+		// The system prompt embeds absolute doc/tool-source paths that contain the
+		// repo dir name, so assert on the lock entry and payload, not the bare name.
 		const llmMessages = sm.buildSessionContext().messages;
-		assert.ok(!JSON.stringify(llmMessages).includes("pi-end-conversation"), "lock leaked into model context");
+		assert.ok(!llmMessages.some((m: any) => m.customType === "pi-end-conversation"), "lock entry leaked into model context");
+		assert.ok(!JSON.stringify(llmMessages).includes('\"locked\":true'), "lock payload leaked into model context");
 	});
 
 	it("re-calling EndConversation while locked stays idempotent", async () => {
