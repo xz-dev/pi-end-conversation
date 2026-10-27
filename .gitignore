@@ -1,0 +1,5 @@
+node_modules/
+.pi/
+.serena/
+openspec/
+test-harness/
